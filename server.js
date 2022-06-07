@@ -3,7 +3,10 @@ const { request } = require("express");
 const express = require("express");
 //were using express and storing it in app; wherever there is app, its just and indication of express in action
 const app = express();
+const cors = require("cors");
 const PORT = 8000;
+
+app.use(cors());
 
 //CREATE JSON
 const rappers = {
