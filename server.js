@@ -39,7 +39,7 @@ app.get("/api/:name", (request, response) => {
   }
 });
 //tell the server to listen to a port number
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`The server is running on port ${PORT}! Better go catch it!`);
 });
 //
